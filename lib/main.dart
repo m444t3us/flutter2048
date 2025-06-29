@@ -24,7 +24,7 @@ class Projeto2048Page extends StatefulWidget {
 
   @override
   State<Projeto2048Page> createState() => _Projeto2048PageState();
-  // aqui cria o estado alteravel do projeto krl
+// aqui cria o estado alteravel do projeto krl
 }
 
 class _Projeto2048PageState extends State<Projeto2048Page> {
@@ -210,9 +210,19 @@ class _Projeto2048PageState extends State<Projeto2048Page> {
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(
-                  message.isNotEmpty ? message : 'Jogo 2048',
-                  style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      message.isNotEmpty ? message : 'Jogo 2048',
+                      style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(width: 16),
+                    Text(
+                      'Movimentos: $moves',
+                      style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.normal),
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 12),
                 Row(
@@ -226,7 +236,6 @@ class _Projeto2048PageState extends State<Projeto2048Page> {
                   ],
                 ), //construção dos botões de dificuldade, alterando o tamanho do tabuleiro com o clique nela
                 const SizedBox(height: 20),
-                Text('Movimentos: $moves', style: const TextStyle(color: Colors.white, fontSize: 18)), //contador de movimentos
                 const SizedBox(height: 20),
                 for (int row = 0; row < gridSize; row++) //construção do tabuleiro, percorre cada linha
                   Row( //faz a linha de widgets = linha de tabuleiro
