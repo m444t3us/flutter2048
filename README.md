@@ -1,16 +1,16 @@
 # flutter2048
 
-flutter2048 para topicos especiais
+Este projeto consiste no desenvolvimento de uma versão personalizada do jogo 2048 utilizando Flutter e Dart.
 
-## Getting Started
+# Tecnologias utilizadas
 
-This project is a starting point for a Flutter application.
+- Dart
+- Flutter
 
-A few resources to get you started if this is your first Flutter project:
+# funcionalidades
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- grid dinâmico
+- Movimentação para 4 lados
+- geração automática de objetos novos
+- condição de vitória e derrota
+- controle de dificuldade
